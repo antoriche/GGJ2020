@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    bool activated = false;
+    public bool activated = false;
+
     // Start is called before the first frame update
-    void OnCollisionEnter(Collision c)
+    void OnTriggerEnter(Collider c)
     {
-        Debug.Log("key");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        activated = true;
+        gameObject.SetActive(false);
     }
 }

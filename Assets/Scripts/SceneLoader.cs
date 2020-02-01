@@ -10,7 +10,7 @@ public class SceneLoader : MonoBehaviour
     public string sceneName = null;
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "MainCamera")
+        if (collision.collider.tag == "Player")
         {
             SceneManager.LoadScene(sceneName);
         }
