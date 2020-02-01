@@ -2,11 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : MonoBehaviour
+public class Key : Actionnable
 {
-    private void OnTriggerEnter(Collider other)
+    public bool activated = false;
+
+    public override void OnAction()
     {
-        GameObject.Find("RotateDoor").GetComponent<DoorScript>().canOpen = true;
-        gameObject.SetActive(false);
+        activated = true;
+    }
+
+    void Update()
+    {
+        if (consomable && activated)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

@@ -5,13 +5,18 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     public bool canOpen = false;
+    public Key key;
+
+    private void Update()
+    {
+        canOpen = key.activated;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Rentre en collision avec la porte");
-        if (canOpen)
+        if(canOpen)
         {
-            GetComponent<Animator>().SetTrigger("PorteTrigger");
+            GetComponent<Animator>().SetBool("IsOpen", true);
         }
     }
 }
