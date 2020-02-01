@@ -8,6 +8,6 @@ public class Heal : Actionnable
 
     public override void OnAction()
     {
-        Timer.Instance.timeLeft += healTimeValue;
+        Timer.Instance.AddTimeLeft(healTimeValue);
     }
 }

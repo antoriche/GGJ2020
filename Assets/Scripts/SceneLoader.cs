@@ -3,16 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(Collider))]
 public class SceneLoader : MonoBehaviour
 {
-
     public string sceneName = null;
-    void OnCollisionEnter(Collision collision)
+    public void Retry()
     {
-        if (collision.collider.tag == "Player")
-        {
-            SceneManager.LoadScene(sceneName);
-        }
+        SceneManager.LoadScene(sceneName);
     }
 }

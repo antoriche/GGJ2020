@@ -31,7 +31,7 @@ public class DimensionManager : Singleton<DimensionManager>
         if (Input.GetKeyDown(switchKey))
         {
             isInThePast = !isInThePast;
-            Timer.Instance.timeLeft -= switchCost;
+            Timer.Instance.AddTimeLeft(-switchCost);
         }
     }
 
