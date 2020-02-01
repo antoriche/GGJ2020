@@ -5,7 +5,13 @@ using UnityEngine;
 public class Timer : Singleton<Timer>
 {
     public float timeLeft = 20f;
+    public float max = 60;
     public float speedFactorOnPast = 2f;
+
+    public void AddTimeLeft(float time)
+    {
+        timeLeft = Mathf.Max(timeLeft + time, max);
+    }
 
     void Update()
     {

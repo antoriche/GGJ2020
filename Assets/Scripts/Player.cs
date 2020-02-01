@@ -7,6 +7,6 @@ public class Player : Singleton<Player>
 {
     public void Die()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Scenes/deadScene");
     }
 }
