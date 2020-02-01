@@ -10,7 +10,7 @@ public class Timer : Singleton<Timer>
 
     public void AddTimeLeft(float time)
     {
-        timeLeft = Mathf.Max(timeLeft + time, max);
+        timeLeft = Mathf.Min(timeLeft + time, max);
     }
 
     void Update()
