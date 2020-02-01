@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : MonoBehaviour
+public class Key : Actionnable
 {
     public bool activated = false;
-    public KeyCode key = KeyCode.Mouse0;
 
-    void OnTriggerStay(Collider c)
+    public override void OnAction()
     {
-        if (Input.GetKey(key))
-        {
-            activated = true;
-            gameObject.SetActive(false);
-        }
+        activated = true;
     }
 }

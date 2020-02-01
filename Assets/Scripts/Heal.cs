@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Heal : MonoBehaviour
+public class Heal : Actionnable
 {
     public float healTimeValue = 10f;
 
-    void OnTriggerEnter(Collider c)
+    public override void OnAction()
     {
         Timer.Instance.timeLeft += healTimeValue;
-        gameObject.SetActive(false);
     }
 }
