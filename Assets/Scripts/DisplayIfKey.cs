@@ -6,11 +6,12 @@ public class DisplayIfKey : MonoBehaviour
 {
 
     public Key key;
+    public bool invert;
     public GameObject target;
 
     // Update is called once per frame
     void Update()
     {
-        target.SetActive(key.activated);
+        target.SetActive(invert ? !key.activated : key.activated);
     }
 }

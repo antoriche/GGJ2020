@@ -7,14 +7,9 @@ public class DoorScript : MonoBehaviour
     public bool canOpen = false;
     public Key key;
 
-    private void Update()
+    void OnTriggerEnter(Collider other)
     {
-        canOpen = key.activated;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(canOpen)
+        if (other.gameObject.tag == "Player" && key.activated)
         {
             GetComponent<Animator>().SetBool("IsOpen", true);
         }
