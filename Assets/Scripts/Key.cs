@@ -10,4 +10,12 @@ public class Key : Actionnable
     {
         activated = true;
     }
+
+    void Update()
+    {
+        if (consomable && activated)
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }
