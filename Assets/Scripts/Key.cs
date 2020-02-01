@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    public bool activated = false;
-
-    // Start is called before the first frame update
-    void OnTriggerEnter(Collider c)
+    private void OnTriggerEnter(Collider other)
     {
-        activated = true;
+        GameObject.Find("RotateDoor").GetComponent<DoorScript>().canOpen = true;
         gameObject.SetActive(false);
     }
 }
