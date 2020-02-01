@@ -5,11 +5,14 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     public bool activated = false;
+    public KeyCode key = KeyCode.Mouse0;
 
-    // Start is called before the first frame update
-    void OnTriggerEnter(Collider c)
+    void OnTriggerStay(Collider c)
     {
-        activated = true;
-        gameObject.SetActive(false);
+        if (Input.GetKey(key))
+        {
+            activated = true;
+            gameObject.SetActive(false);
+        }
     }
 }
