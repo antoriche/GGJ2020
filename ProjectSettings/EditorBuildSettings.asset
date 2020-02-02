@@ -9,17 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 82ffffcecd7dae3438cec8d9d99b53f2
   - enabled: 1
+    path: Assets/Scenes/TransitionMenu.unity
+    guid: aa9eca7e2352d1847a9e088f7625685a
+  - enabled: 1
     path: Assets/Scenes/AntoninScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/deadScene.unity
-    guid: 003c1e586e5354c719231c598c0d86a5
-  - enabled: 0
-    path: Assets/Scenes/KarineScene.unity
-    guid: f56868a4f5050d7458ccd059f8d81b92
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 82ffffcecd7dae3438cec8d9d99b53f2
   - enabled: 1
     path: Assets/Scenes/deadScene.unity
     guid: 003c1e586e5354c719231c598c0d86a5
