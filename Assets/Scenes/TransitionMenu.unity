@@ -1009,13 +1009,12 @@ MonoBehaviour:
     - "Bien, J\u2019y suis ! ..."
     - "Il faut que j\u2019aille au bout du b\xE2timent pour r\xE9cup\xE9rer les documents
       sur le virus..."
-    - Bien, ma machine temporelle me donne 3 minutes pour avancer le plus vite possible
+    - Ma machine temporelle me donne 3 minutes pour avancer le plus vite possible
       ! ...
-    - "Vu ce qu\u2019il m\u2019attend, je vais surement devoir remonter en 2020 pour
-      pouvoir avancer..."
-    - "Je vais devoir faire attention. Mon temps dans cette timeline s\u2019\xE9coule
-      plus vite. Il ne faut pas que je tra\xEEne trop sinon le gaz va m\u2019avoir
-      et tout espoir de r\xE9parer le futur sera d\xE9truit."
+    - Ok, je vais surement devoir remonter en 2020 pour pouvoir avancer...
+    - "Il faut que je fasse attention. Mon temps dans cette timeline est limit\xE9.
+      Il ne faut pas que je tra\xEEne trop sinon le gaz va se r\xE9pandre et tout
+      espoir de r\xE9parer le futur sera d\xE9truit."
 --- !u!114 &1823678372
 MonoBehaviour:
   m_ObjectHideFlags: 0
