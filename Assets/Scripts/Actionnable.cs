@@ -22,7 +22,7 @@ public abstract class Actionnable : MonoBehaviour
 
     void OnTriggerStay(Collider c)
     {
-        if (Input.GetKey(key))
+        if (Input.GetKeyDown(key))
         {
             this.OnAction();
             if (consomable) gameObject.SetActive(false);
