@@ -7,6 +7,7 @@ public class Player : Singleton<Player>
 {
     public void Die()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("Scenes/deadScene");
     }
 }

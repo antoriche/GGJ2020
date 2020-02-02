@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
-    public bool canOpen = false;
     public Key key;
 
     void OnTriggerEnter(Collider other)

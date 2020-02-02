@@ -6,7 +6,7 @@ public class ButtonGroup : Key
 {
 
     public List<Key> buttons = new List<Key>();
-    private List<Key> currents = new List<Key>();
+    public List<Key> currents = new List<Key>();
 
     void Start()
     {
@@ -18,18 +18,28 @@ public class ButtonGroup : Key
     void clickOn(Key button)
     {
         currents.Add(button);
-        for (int i = 0; i < currents.Count; i++)
+        if (shouldClean())
         {
-            if (!currents[i].Equals(buttons[i]))
-            {
-                currents = new List<Key>();
-                return;
-            }
+            currents = new List<Key>();
+            currents.Add(button);
+            return;
         }
         if (currents.Count == buttons.Count)
         {
             this.activated = true;
         }
+    }
+
+    private bool shouldClean()
+    {
+        for (int i = 0; i < currents.Count; i++)
+        {
+            if (!currents[i].Equals(buttons[i]))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     void Update()
