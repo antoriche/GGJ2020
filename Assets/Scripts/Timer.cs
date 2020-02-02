@@ -16,7 +16,6 @@ public class Timer : Singleton<Timer>
     void Update()
     {
         timeLeft -= Time.deltaTime * (DimensionManager.Instance.isInThePast ? speedFactorOnPast : 1);
-
         if (timeLeft < 0)
         {
             Player.Instance.Die();
