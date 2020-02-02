@@ -113,6 +113,7 @@
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\TitreShake.cs" />
     <Compile Include="Assets\Scripts\Watch.cs" />
     <None Include="Assets\Imports\Interior Asset\README.txt" />
     <None Include="Assets\Imports\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
