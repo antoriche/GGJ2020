@@ -8,6 +8,7 @@ public class ButtonMenu : MonoBehaviour
 {
     public Text play;
     public Text quit;
+    public Animator transitionAnim;
 
     private void OnMouseOver()
     {
@@ -17,8 +18,8 @@ public class ButtonMenu : MonoBehaviour
 
     public void onClickPlay()
     {
-        StartCoroutine(LoadSceneMenu("AntoninScene", 5f));
-        StopCoroutine("LoadSceneMenu");
+        StartCoroutine(LoadSceneMenu(1, 5f));
+        
     }
 
     public void onClickQuit()
@@ -26,9 +27,10 @@ public class ButtonMenu : MonoBehaviour
         Application.Quit();
     }
 
-    IEnumerator LoadSceneMenu(string _name, float _delay)
+    IEnumerator LoadSceneMenu(int index, float _delay)
     {
+        transitionAnim.enabled = true;
         yield return new WaitForSeconds(_delay);
-        SceneManager.LoadScene(_name);
+        SceneManager.LoadScene(index);
     }
 }
