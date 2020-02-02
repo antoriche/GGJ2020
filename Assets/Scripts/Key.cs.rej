@@ -1,0 +1,14 @@
+diff a/Assets/Scripts/Key.cs b/Assets/Scripts/Key.cs	(rejected hunks)
+@@ -10,4 +10,12 @@
+     {
+         activated = true;
+     }
++
++    void Update()
++    {
++        if (consomable && activated)
++        {
++            gameObject.SetActive(false);
++        }
++    }
+ }
