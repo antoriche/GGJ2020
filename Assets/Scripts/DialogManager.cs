@@ -53,6 +53,11 @@ public class DialogManager : MonoBehaviour
         }
     }
 
+    public void EndGame()
+    {
+        Application.Quit();
+    }
+
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
